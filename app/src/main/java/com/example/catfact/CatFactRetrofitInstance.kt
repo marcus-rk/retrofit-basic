@@ -3,7 +3,7 @@ package com.example.catfact
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
+class CatFactRetrofitInstance {
     private val baseURL = "https://catfact.ninja/";
 
     private val retrofitClient = Retrofit.Builder()

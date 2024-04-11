@@ -4,7 +4,7 @@ import kotlinx.coroutines.runBlocking
 
 fun main() {
     runBlocking {
-        val instance = RetrofitInstance()
+        val instance = CatFactRetrofitInstance()
         val fact = instance.apiService.getFact()
         println(fact)
     }
