@@ -1,10 +1,10 @@
-package com.example.catfact
+package com.example.bored
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInstance {
-    private val baseURL = "https://catfact.ninja/";
+    private val baseURL = "http://www.boredapi.com/api/";
 
     private val retrofitClient = Retrofit.Builder()
         .baseUrl(baseURL)
