@@ -11,5 +11,5 @@ class RetrofitInstance {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val apiService = retrofitClient.create(BoredApi::class.java)
+    val apiService = retrofitClient.create(CatFactsApi::class.java)
 }
