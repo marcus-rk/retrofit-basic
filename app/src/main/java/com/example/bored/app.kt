@@ -15,6 +15,7 @@ fun main() {
         val factByParticipants = instance.apiService.getEventByParticipants(participantsInput!!)
         println(factByParticipants)
 
+        /*
         println("\nRandom fact by accessibility and price-range")
         print("Insert accessibility: ")
         val accessibilityInput = readlnOrNull()?.toDouble()
@@ -43,6 +44,7 @@ fun main() {
         } catch (e: Exception) {
             println("Request failed: ${e.message}")
         }
+         */
 
     }
 }

@@ -8,6 +8,10 @@ import retrofit2.http.POST
 
 interface ReqResAPI {
     @Headers("Content-Type: application/json")
-    @POST("user")
+    @POST("/api/register")
     fun addUser(@Body userData: User): Call<ResponseBody>
+
+    @Headers("Content-Type: application/json")
+    @POST("/api/login")
+    fun loginUser(@Body userData: User): Call<ResponseBody>
 }
